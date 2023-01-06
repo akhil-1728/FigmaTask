@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@media screen and (min-width:576px) {
+    main {
+        max-width: 540px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    main {
+        max-width: 720px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    main {
+        max-width: 940px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    main {
+        max-width: 1140px;
+    }
+}
+
+main {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    z-index: 1003;
+    background-color: #080808;
+    width: 100%;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.main-img {
+    height: auto;
+    width: 100%;
+}
+
+.four-box-text {
+    margin: 25px 0px;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+    width: 100%;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
+
+.four-box-text div {
+    font-size: 40px;
+    display: flex;
+    padding-left: 10%;
+    gap: 25px;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.list-text p {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+
+.ingredients {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+p {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+
+.four-grid-container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+    margin: 25px 0;
+}
+
+.four-grid-container div {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.four-grid-container div i {
+    font-size: 2rem;
+}
+
+.add-cart {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    align-items: center;
+    margin: 25px 0;
+}
+
+h5,
+h1 {
+    font-weight: 500;
+}
+
+.add-subtract span {
+    font-size: 2rem;
+    padding: 8px 32px;
+    border: 2px solid grey;
+    font-weight: 500;
+}
+
+.btn-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 1.3rem;
+    padding: 1rem 0;
+}
+
+#btn-green {
+    background-color: #74975d;
+    color: #fff;
+}
+
+#btn-white {
+    background-color: #fff;
+    color: #74975d;
+    border: 2px solid #74975d;
+}
+
+.end {
+    margin: 25px 0;
+}
+
+.text-div {
+    background-image: linear-gradient(to right, #000 10%, rgba(255, 255, 255, 0) 0%);
+    background-position: 0 14px;
+    background-size: 10px 1px;
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 25px;
+    color: #404040;
+}
+
+.text-span {
+    background: #fff;
+    padding-right: 10px
+}
+
+.pull-right {
+    float: right;
+    padding-left: 10px
+}
+
+@media screen and (max-width:768px) {
+    header {
+        font-size: 1.3rem;
+        height: 50px;
+        padding: 10px 0;
+    }
+
+    .four-grid-container div {
+        text-align: center;
+        padding: 25px 0;
+    }
+
+    .four-grid-container div i {
+        font-size: 1rem;
+    }
+
+.list-text p {
+    font-size: 1rem;
+}
+
+.end .text-div .text-span {
+    font-size: 0.8rem;
+}
+
+    p {
+        font-size: 1rem;
+    }
+
+    .four-grid-container div i {
+        font-size: 1rem;
+    }
+
+
+
+}
+
+@media screen and (max-width:480px) {
+
+    .add-cart {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        align-items: center;
+        margin: 25px 0;
+    }
+
+    .price h5 {
+        font-size: 10px;
+    }
+
+    .price h1 {
+        font-size: 20px;
+    }
+
+    .add-subtract span {
+        font-size: 1rem;
+        border: 2px solid grey;
+        font-weight: 500;
+    }
+}
